@@ -1,10 +1,8 @@
 import { useLocation, useNavigate } from "react-router"
 import { DetailsUI } from "../UI/details/DetailsUI"
 import { useSelector } from "../../store/store"
-import {  getIsLoading, getUsers } from "../../slices/users"
-import { useEffect } from "react"
+import { getIsLoading, getUsers } from "../../slices/users"
 import { ErrorUI } from "../UI/error/ErrorUI"
-
 
 
 export const Details = () => {
@@ -14,21 +12,21 @@ export const Details = () => {
     let usersData = useSelector(getUsers)
     const isLoading = useSelector(getIsLoading)
 
-    if(isLoading || !usersData) {
+    if (isLoading || !usersData) {
         return (<ErrorUI notFound={true} />)
-    } 
+    }
 
-    const user = usersData?.find((user) => 
+    const user = usersData?.find((user) =>
         user.id === location.pathname.slice(1))
 
 
-    if(!user) {
+    if (!user) {
         return (<ErrorUI notFound={true} />)
     }
 
     const onHomePage = () => {
         navigate('/')
-    }   
+    }
 
-    return (<DetailsUI userData={user} onHomePage={onHomePage}/>)
+    return (<DetailsUI userData={user} onHomePage={onHomePage} />)
 }

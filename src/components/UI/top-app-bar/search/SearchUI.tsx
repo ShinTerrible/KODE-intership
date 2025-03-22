@@ -17,7 +17,7 @@ export const SearchUI = () => {
     const [BGImg, setBGImg] = useState(searchlight)
 
     useEffect(() => {
-        if (isLoading === true) setFormBf('#6534FF') //фиолетовый
+        if (isLoading === true) setFormBf('#6534FF')
         if (isLoading === false) setFormBf('#ffffff')
         if (error === '') setFormBf('#F44336')
     }, [isLoading])
@@ -42,8 +42,8 @@ export const SearchUI = () => {
         } else {
             return (<div className={style.label_content}>
                 <img src={BGImg} id='search' className={style.search_svg} />
-                <input onBlur={() => setBGImg(searchlight)} onFocus={ () => setBGImg(searchDark)} autoComplete="off" id='search_input' className={style.input} type="text" placeholder='Введи имя, тег, почту...' onChange={(e) => { onFilter(e) }} />
-                <button style={{backgroundImage: `url("${sortSVG}")`}} onClick={openSortModal} className={style.sort_svg} type='button'></button>
+                <input onBlur={() => setBGImg(searchlight)} onFocus={() => setBGImg(searchDark)} autoComplete="off" id='search_input' className={style.input} type="text" placeholder='Введи имя, тег, почту...' onChange={(e) => { onFilter(e) }} />
+                <button style={{ backgroundImage: `url("${sortSVG}")` }} onClick={openSortModal} className={style.sort_svg} type='button'></button>
             </div>)
         }
     }

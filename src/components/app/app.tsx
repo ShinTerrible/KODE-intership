@@ -18,7 +18,7 @@ export const App = () => {
     useEffect(() => {
         dispatch(getAllUsers())
         // dispatch(getErrorCode()) //500 ошибка
-  
+
 
     }, [dispatch]);
 
@@ -32,7 +32,6 @@ export const App = () => {
                 <Route path='/:id' element={<DetailsPage />} />
             </Routes>
         </div>
-
     )
 }
 

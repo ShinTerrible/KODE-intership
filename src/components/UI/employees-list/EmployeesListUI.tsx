@@ -1,7 +1,7 @@
 import style from './style.module.css'
 import { EmploeeInfoUI } from '../emploee-info/EmploeeInfoUI';
-import { getIsLoading, getSortState, getUsers, userAction } from '../../../slices/users'
-import { useDispatch, useSelector } from "../../../store/store"
+import { getIsLoading, getSortState, getUsers } from '../../../slices/users'
+import { useSelector } from "../../../store/store"
 import { ErrorUI } from '../error/ErrorUI';
 import { SceletonUI } from '../emploee-info/sceletont/SceletonUI';
 import { useNavigate } from 'react-router';
@@ -16,7 +16,6 @@ export const EmploeeysListUI = () => {
     const usersApi = useSelector(getUsers)
     const isLoading = useSelector(getIsLoading)
     const navigate = useNavigate()
-    const dispatch = useDispatch()
     const sortState = useSelector(getSortState)
 
     if (isLoading) {
@@ -38,11 +37,10 @@ export const EmploeeysListUI = () => {
         let dataA = DataConverter(a)
         let dataB = DataConverter(b)
         if (Number(dataA[5]) > Number(dataB[5])) return 1
-        if (Number(dataA[5]) < Number(dataB[5]))  return -1
+        if (Number(dataA[5]) < Number(dataB[5])) return -1
         if (Number(dataA[5]) === Number(dataB[5]) && (Number(dataA[2]) > Number(dataB[2]))) return 1
         return 0
     }
-
 
     const EmploeeComponentRender = (users: TUserApi[],) => {
         return users.map((user) => {
@@ -88,7 +86,7 @@ export const EmploeeysListUI = () => {
         const nextYearRender = EmploeeComponentRender(nextYear)
 
         let separatorUI = (<Separator year={separator} />)
-console.log(thisYear, nextYear)
+        console.log(thisYear, nextYear)
         return sortState === 'birthday' ? [thisYearRender, separatorUI, nextYearRender] : (
             EmploeeComponentRender(usersApi as TUserApi[])
         )

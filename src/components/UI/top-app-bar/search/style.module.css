@@ -1,7 +1,6 @@
 .form {
     width: 100%;
     padding: 6px 16px;
-
 }
 
 .label {
@@ -87,8 +86,8 @@
    height: 52px;
    width: 100dvw;
    padding-block-start: 8px;
-    
 }
+
 .onLoading_info {
     font-family: Inter, sans-serif;
     font-weight: 500;

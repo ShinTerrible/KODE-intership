@@ -37,3 +37,31 @@ export type EmploeeInfoProps = Partial<TUserApi> & {
     month?: string,
     day?: string
 }
+
+export type TDetailsProps = {
+    onHomePage: () => void
+    userData: TUserApi
+}
+
+export type TSeparatorProps = {
+    year: string
+}
+
+export type TErrorProps = {
+    notFound: boolean
+}
+
+export type TModalProps = {
+    onSort: (e: SyntheticEvent) => void
+    display: boolean,
+    onClose: (e: SyntheticEvent) => void
+}
+
+export type TopAppBarProps = {
+    onTabButton: (e: SyntheticEvent) => void
+}
+ 
+
+export type TabUpBarProps = {
+    onTabButton: (e: SyntheticEvent) => void
+}
