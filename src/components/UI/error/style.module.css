@@ -1,0 +1,50 @@
+.error_container {
+    width: 343px;
+    margin: 133px auto auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.img {
+    width: 56px;
+    height: 56px;
+}
+
+.title {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center; 
+    color: #050510;
+    cursor: default;
+}
+
+.info {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #97979B;
+    cursor: default;
+
+}
+
+.refresh {
+    font-family: Inter, sans-serif;
+    background-color: transparent;
+    border: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #6534FF;   
+    cursor: pointer;
+}

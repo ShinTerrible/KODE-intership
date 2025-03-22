@@ -1,0 +1,67 @@
+.tabBar_cover {
+    width: 100vw;
+    max-width: 1280px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.tabBar_list {
+    display: flex;
+    margin-inline-end: auto;
+}
+
+.tabBar_button {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    background-color: transparent;
+    border: 1.5px solid transparent;
+    margin: 0;
+    color: #97979B;
+    padding: 6px 16px;
+    height: 35px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.tabBar_button:hover, .tabBar_button:active {
+    border-block-end-width: 1.5px;
+    border-block-end-style: solid;
+    border-block-end-color: #6534FF;
+}
+
+@media screen and (width <=768px) {
+    .tabBar_cover {
+        max-width: 100dvw;
+    }
+
+    .tabBar_list {
+        justify-content: space-around;
+        overflow-inline: scroll;
+        overflow-block: hidden;
+        scrollbar-color: #e5e5e6 transparent;
+        scrollbar-width: none;
+    }
+
+    .tabBar_list::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .tabBar_list::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+    .tabBar_list_item {
+        width: fit-content;
+        height: 35px;
+    }
+
+    .tabBar_button {
+        font-size: 12px;
+        padding: 6px 16px;
+        z-index: 2;
+    }
+}

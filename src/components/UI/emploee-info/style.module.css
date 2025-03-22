@@ -1,0 +1,74 @@
+.emploeeys_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.emploeeys_avatar {
+    width: 72px;
+    height: 72px;
+    margin: 6px 16px 6px 0;
+}
+
+.emploeeys_caption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.emploeeys_header_caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.emploeeys_avatar {
+    border-radius: 36px;
+}
+
+.emploeeys_header {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #050510;
+}
+
+.emploeeys_tag {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #97979B;
+    text-transform: lowercase;
+}
+
+.emploeeys_position {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #55555C;
+}
+
+.birthday {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #55555C;
+    margin-inline-start: auto;
+}

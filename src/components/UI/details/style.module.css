@@ -1,0 +1,155 @@
+.details {
+    margin: auto;
+    width: 100vw;
+    max-width: 1280px;
+}
+
+.details_nav {
+    margin-inline-start: auto;
+    height: 48px;
+    padding-block-start: 12px;
+    background-color: #F7F7F8;
+}
+
+.nav_button {
+    background-image: url('../../../assets/nav.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    background-color: transparent;
+    border: 0;
+    width: 24px;
+    height: 24px;
+    margin-inline-start: 24px;
+    cursor: pointer;
+}
+
+.details_header {
+    background-color: #F7F7F8;
+}
+
+.header_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block-end: 24px;
+    padding-block-start: 12px;
+}
+
+.emploeeys_avatar {
+    width: 104px;
+    height: 104px;
+    margin-block-end: 24px;
+    border-radius: 64px;
+}
+
+.emploeeys_caption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.emploeeys_header_caption {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.emploeeys_header {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #050510;
+}
+
+.emploeeys_tag {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #97979B;
+    text-transform: lowercase;
+}
+
+.emploeeys_position {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #55555C;
+    text-transform: capitalize;
+}
+
+
+.additional_info_container {
+    width: 100%;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+
+}
+
+.birthday_info,
+.contact_info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    height: 60px;
+    margin-block-end: 6px;
+}
+
+.elect_button {
+    background-image: url('../../../assets/star.svg');
+}
+
+.age {
+    display: block;
+    margin-inline-start: auto;
+    color: #97979B;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: right;
+
+}
+
+.elect_button,
+.contact_button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.info,
+.contact {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: bottom;
+    color: #050510;
+}
+
+
+
+.contact_button {
+    background-image: url('../../../assets/phone.svg');
+}

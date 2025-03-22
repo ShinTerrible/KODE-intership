@@ -1,0 +1,99 @@
+.form {
+    width: 100%;
+    padding: 6px 16px;
+
+}
+
+.label {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #050510;
+}
+
+.label_content {
+    margin-block-start: 16px;
+    width: 100%;
+    background-color: #F7F7F8;
+    height: 40px;
+    border-radius: 16px;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input {
+    caret-color: #6534FF;
+    font-family: Inter, sans-serif;
+    background-color: transparent;
+    border: transparent;
+    display: block;
+    margin-inline-start: 2px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #050510;
+    width: 100%;
+}
+
+.input::placeholder {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #C3C3C6;
+}
+
+.input:focus-visible {
+    outline: none;
+}
+
+.search_svg {
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    margin: 0;
+    margin-inline-end: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+.sort_svg {
+    align-self: center;
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: center;
+    height: 12px;
+    width: 20px;
+    margin-inline-start: auto;
+    cursor: pointer;
+}
+
+.sort_svg:hover, .sort_svg:active, .sort_svg:focus {
+    background-image: url('../../../../assets/sort-active.svg');
+}
+
+.onLoading_container {
+   height: 52px;
+   width: 100dvw;
+   padding-block-start: 8px;
+    
+}
+.onLoading_info {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    color: #ffffff;
+}
